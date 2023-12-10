@@ -2,3 +2,14 @@
 __pycashe__/
 .pyc
 .pytest_cache/
+.pytest_cache/.gitignore
+.pytest_cache/CACHEDIR.TAG
+.pytest_cache/README.md
+.pytest_cache/v/cache/lastfailed
+.pytest_cache/v/cache/nodeids
+.pytest_cache/v/cache/stepwise
+__pycache__/conftest.cpython-310-pytest-7.4.2.pyc
+__pycache__/locators.cpython-310.pyc
+__pycache__/test_autorization.cpython-310-pytest-7.4.2.pyc
+__pycache__/test_construktor.cpython-310-pytest-7.4.2.pyc
+__pycache__/test_registration.cpython-310-pytest-7.4.2.pyc
