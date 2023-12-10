@@ -7,36 +7,32 @@ from locators import RegPage, MainLocators
 
 class TestChangePlace:
     
-    def test_changeplace_click_on_button_lk(self):
-        driver = webdriver.Chrome()
-        driver.get("https://stellarburgers.nomoreparties.site/")
-        driver.find_element(*RegPage.BUTTON_ENTER_IN_ACC).click()
-        WebDriverWait(driver, timeout=3).until(expected_conditions.url_contains, "/login")
-        driver.find_element(*RegPage.BUTTON_NAME).send_keys("testtesttesttes@gmail.com")
-        driver.find_element(*RegPage.BUTTON_EMAIL).send_keys("testtest")
-        driver.find_element(*RegPage.BUTTON_LOGIN).click()
-        driver.find_element(*MainLocators.BUTTON_LOGIN_LK).click()
-        assert driver.find_element(*MainLocators.BUTTON_ORDER)
+    def test_changeplace_click_on_button_lk(browser):
+        browser.get("https://stellarburgers.nomoreparties.site/")
+        browser.find_element(*RegPage.BUTTON_ENTER_IN_ACC).click()
+        WebDriverWait(browser, timeout=3).until(expected_conditions.url_contains, "/login")
+        browser.find_element(*RegPage.BUTTON_NAME).send_keys("testtesttesttes@gmail.com")
+        browser.find_element(*RegPage.BUTTON_EMAIL).send_keys("testtest")
+        browser.find_element(*RegPage.BUTTON_LOGIN).click()
+        browser.find_element(*MainLocators.BUTTON_LOGIN_LK).click()
+        assert browser.current  == 'https://stellarburgers.nomoreparties.site/'
         
-    def test_changeplace_click_on_construktor(self):
-        driver = webdriver.Chrome()
-        driver.get("https://stellarburgers.nomoreparties.site/")
-        driver.find_element(*RegPage.BUTTON_ENTER_IN_ACC).click()
+    def test_changeplace_click_on_construktor(browser):
+        browser.get("https://stellarburgers.nomoreparties.site/")
+        browser.find_element(*RegPage.BUTTON_ENTER_IN_ACC).click()
         WebDriverWait(driver, timeout=3).until(expected_conditions.url_contains, "/login")
-        driver.find_element(*RegPage.BUTTON_NAME).send_keys("testtesttesttes@gmail.com")
-        driver.find_element(*RegPage.BUTTON_EMAIL).send_keys("testtest")
-        driver.find_element(*RegPage.BUTTON_LOGIN).click()
-        driver.find_element(*MainLocators.BUTTON_CONSTRUKTOR).click()
-        assert driver.find_element(*MainLocators.BUTTON_ORDER)
+        browser.find_element(*RegPage.BUTTON_NAME).send_keys("testtesttesttes@gmail.com")
+        browser.find_element(*RegPage.BUTTON_EMAIL).send_keys("testtest")
+        browser.find_element(*RegPage.BUTTON_LOGIN).click()
+        browser.find_element(*MainLocators.BUTTON_CONSTRUKTOR).click()
+        assert browser.current  == 'https://stellarburgers.nomoreparties.site/'
         
-    def test_changeplace_click_on_logoSB(self):
-        driver = webdriver.Chrome()
-        driver.get("https://stellarburgers.nomoreparties.site/")
-        driver.find_element(*RegPage.BUTTON_ENTER_IN_ACC).click()
+    def test_changeplace_click_on_logoSB(browser):
+        browser.get("https://stellarburgers.nomoreparties.site/")
+        browser.find_element(*RegPage.BUTTON_ENTER_IN_ACC).click()
         WebDriverWait(driver, timeout=3).until(expected_conditions.url_contains, "/login")
-        driver.find_element(*RegPage.BUTTON_NAME).send_keys("testtesttesttes@gmail.com")
-        driver.find_element(*RegPage.BUTTON_EMAIL).send_keys("testtest")
-        driver.find_element(*RegPage.BUTTON_LOGIN).click()
-        driver.find_element(*MainLocators.LOGO).click()
-        assert MainLocators.MAIN_PAGE
-    
+        browser.find_element(*RegPage.BUTTON_NAME).send_keys("testtesttesttes@gmail.com")
+        browser.find_element(*RegPage.BUTTON_EMAIL).send_keys("testtest")
+        browser.find_element(*RegPage.BUTTON_LOGIN).click()
+        browser.find_element(*MainLocators.LOGO).click()
+        assert browser.current  == 'https://stellarburgers.nomoreparties.site/'

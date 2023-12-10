@@ -2,9 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
+
 class RegPage:
     
-    BUTTON_ENTER_IN_ACC = (By.XPATH, "//button[text()='Войти в аккаунт']")
+    BUTTON_ENTER_IN_ACC = (By.CLASS_NAME, "button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg")
     BUTTON_LOGIN = (By.XPATH, "//button[text() = 'Войти']")
     NAME_FORM = (By.XPATH, "(.//input[@name = 'name'])[1]")
     EMAIL_FORM = (By.XPATH, "(.//input[@name = 'name'])[2]")
@@ -12,18 +13,16 @@ class RegPage:
     BUTTON_REG_ACC = (By. XPATH, "//button[text() = 'Зарегистрироваться']")
     BUTTON_NAME = (By.XPATH, "(.//input[@name = 'name'])")
     BUTTON_EMAIL = (By.XPATH, "//input[@name = 'Пароль']")
-    BUTTON_ENTER_FORMREG = (By.XPATH, ".//a[text() = 'Войти']")
-    BUTTON_ENTER_RECOVERYFORM = (By.XPATH, ".//a[text() = 'Восстановить пароль']")
-    BUTTON_ENTER_FOGOTPASS = (By.XPATH, ".//a[text() = 'Войти']")
+    BUTTON_ENTER_FORM_REG = (By.LINK_TEXT, '/register')
+    BUTTON_ENTER_RECOVERYFORM = (By.CLASS_NAME, "Auth_link__1fOlj")
+    BUTTON_ENTER_FOGOTPASS = (By.LINK_TEXT, '/login')
     
 
 class MainLocators:
     
     BUTTON_LOGIN_LK = (By.XPATH, ".//p[text() = 'Личный Кабинет']")
-    BUTTON_LOG_IN_ACC = (By.XPATH, "button[text() = 'Войти в аккаунт']")
     BUTTON_ORDER = (By.XPATH, ".//button[text() = 'Оформить заказ']")
     BUTTON_REGISTRAION = (By.XPATH, ".//a[text() = 'Зарегистрироваться']")
-    BUTTON_ORDER = (By.XPATH, "//button[text() = 'Оформить заказ']")
     BUTTON_CONSTRUKTOR = (By.XPATH, ".//p[text() = 'Конструктор']")
     LOGO = (By.LINK_TEXT, "/")
     BULKA = (By.XPATH, ".//span[text() = 'Булки']")

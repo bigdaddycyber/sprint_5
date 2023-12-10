@@ -7,15 +7,25 @@ from locators import RegPage, MainLocators
 
 class TestConstruktor:
     
-    def test_navigate_tab_bulki_souce_nachinka(self):
-        driver = webdriver.Chrome()
-        driver.get("https://stellarburgers.nomoreparties.site/")
-        WebDriverWait(driver, timeout=3).until(expected_conditions.url_contains, "/login")
-        active_tab = driver.find_element(*MainLocators.BULKA).text
-        assert active_tab == 'Булки'
-        driver.find_element(*MainLocators.SOUCE).click()
-        new_tab = driver.find_element(*MainLocators.SOUCE).text
-        assert new_tab == "Соусы"
-        driver.find_element(*MainLocators.NACHINKA).click()
-        new_tab_next = driver.find_element(*MainLocators.NACHINKA).text
-        assert new_tab_next == "Начинки"
+    def test_navigate_tab_bulki(browser):
+        browser.get("https://stellarburgers.nomoreparties.site/")
+        browser.finnd_element(*MainLocators.BULKA).click()
+        WebDriverWait(browser, timeout=3).until(expected_conditions.url_contains, "https://stellarburgers.nomoreparties.site")
+        bulki_tab = browser.find_element(By.CLASS_NAME, 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect')
+        assert bulki_tab == 'Булки'
+
+    def test_navigate_tab_souse(browser):  
+        browser.get("https://stellarburgers.nomoreparties.site/")
+        browser.find_elemen(*MainLocators.SOUCE).click
+        WebDriverWait(browser, timeout=3).until(expected_conditions.url_contains, "https://stellarburgers.nomoreparties.site")
+        souse_tab = browser.find_element(By.CLASS_NAME, 'tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect')
+        assert souse_tab == "Соусы"
+        
+    def test_navigate_tab_nachinka(browser):    
+        browser.find_element(*MainLocators.NACHINKA).click()
+        WebDriverWait(browser, timeout=3).until(expected_conditions.url_contains, "https://stellarburgers.nomoreparties.site")
+        nachinka_tab = browser.find_element(*By.CLASS_NAME, 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect')
+        assert nachinka_tab == "Начинки"
+       
+
+
