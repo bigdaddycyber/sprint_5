@@ -5,7 +5,7 @@ import string
 
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def browser():
     driver = webdriver.Chrome()
     yield driver
