@@ -1,0 +1,16 @@
+[
+  "tests/test_autorization.py::TestAutorization::test_enter_button_on_main_page",
+  "tests/test_autorization.py::TestAutorization::test_enter_button_through_formregistration",
+  "tests/test_autorization.py::TestAutorization::test_enter_button_through_from_recoveryform",
+  "tests/test_autorization.py::TestAutorization::test_enter_button_through_lk",
+  "tests/test_autorization.py::test_enter_button_through_formregistration",
+  "tests/test_autorization.py::test_enter_button_through_from_recoveryform",
+  "tests/test_autorization.py::test_enter_button_through_lk",
+  "tests/test_construktor.py::TestConstruktor::test_navigate_tab_bulki",
+  "tests/test_construktor.py::TestConstruktor::test_navigate_tab_nachinka",
+  "tests/test_construktor.py::TestConstruktor::test_navigate_tab_souse",
+  "tests/test_registration.py::TestRegisrtrationPage::test_error_for_nocorrect_password",
+  "tests/test_registration.py::TestRegisrtrationPage::test_successful_registration",
+  "tests/test_registration.py::TestRegistrationPage::test_error_for_incorrect_password",
+  "tests/test_registration.py::TestRegistrationPage::test_successful_registration"
+]

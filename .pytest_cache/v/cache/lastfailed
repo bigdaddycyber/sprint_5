@@ -1,0 +1,14 @@
+{
+  "tests/test_autorization.py::TestAutorization::test_enter_button_on_main_page": true,
+  "tests/test_autorization.py::test_enter_button_through_from_recoveryform": true,
+  "tests/test_registration.py::TestRegisrtrationPage::test_successful_registration": true,
+  "tests/test_autorization.py::test_enter_button_through_lk": true,
+  "tests/test_autorization.py::test_enter_button_through_formregistration": true,
+  "tests/test_construktor.py::TestConstruktor::test_navigate_tab_bulki": true,
+  "tests/test_construktor.py::TestConstruktor::test_navigate_tab_souse": true,
+  "tests/test_construktor.py::TestConstruktor::test_navigate_tab_nachinka": true,
+  "tests/test_registration.py::TestRegisrtrationPage::test_error_for_nocorrect_password": true,
+  "tests/test_registration.py::TestRegistrationPage::test_successful_registration": true,
+  "tests/test_registration.py::TestRegistrationPage::test_error_for_incorrect_password": true,
+  "tests/test_registration.py::TestRegistrationPage": true
+}
