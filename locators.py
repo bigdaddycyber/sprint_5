@@ -7,8 +7,8 @@ class RegPage:
     
     BUTTON_ENTER_IN_ACC = (By.CLASS_NAME, "button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg")
     BUTTON_LOGIN = (By.XPATH, "//button[text() = 'Войти']")
-    NAME_FORM = (By.XPATH, "(.//input[@name = 'name'])[1]")
-    EMAIL_FORM = (By.XPATH, "(.//input[@name = 'name'])[2]")
+    NAME_FORM = (By.XPATH, "(.//input[@name = 'name'])")
+    EMAIL_FORM = (By.XPATH, ".//label[text()='Email']/following-sibling::input")
     PASSWORD_FORM = (By.XPATH, "//input[@name = 'Пароль']")
     BUTTON_REG_ACC = (By. XPATH, "//button[text() = 'Зарегистрироваться']")
     BUTTON_NAME = (By.XPATH, "(.//input[@name = 'name'])")
